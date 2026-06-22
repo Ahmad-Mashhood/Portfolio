@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <section id="home" className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center py-10 md:py-16">
       {/* Left Text Block */}
-      <div className="lg:col-span-7 space-y-5 text-center lg:text-left order-2 lg:order-1">
+      <div className="lg:col-span-7 space-y-5 text-center lg:text-left">
         <div className="flex items-center justify-center lg:justify-start gap-2">
           <h2 className="font-outfit text-3xl font-bold tracking-tight text-foreground">
             Hello<span className="text-primary font-black">.</span>
@@ -47,7 +47,8 @@ const Profile = () => {
       </div>
 
       {/* Right Avatar Block */}
-      <div className="lg:col-span-5 flex justify-center order-1 lg:order-2">
+      <div className="lg:col-span-5 flex justify-center mt-6 lg:mt-0">
+
         <div className="relative flex items-center justify-center size-64 sm:size-80 lg:size-96">
           {/* Concentric Circles Grid Lines */}
           <div className="absolute inset-0 rounded-full border border-border/10 animate-[spin_120s_linear_infinite]" />

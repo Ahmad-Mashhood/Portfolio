@@ -37,18 +37,22 @@ const About = () => {
         <div className="lg:col-span-6 space-y-6">
           <h3 className="font-outfit text-xl font-bold text-foreground/90 mb-4">What I Do</h3>
           
-          <div className="relative pl-6 border-l-2 border-primary/20 space-y-8">
+          <div className="relative">
             {services.map((service, index) => {
               const Icon = service.icon
               return (
-                <div key={index} className="relative group">
+                <div key={index} className="relative pl-8 pb-8 last:pb-0 group">
+                  {/* Vertical line segment */}
+                  {index !== services.length - 1 && (
+                    <span className="absolute left-[9px] top-4 bottom-0 w-0.5 bg-primary/20" />
+                  )}
                   {/* Timeline Dot */}
-                  <span className="absolute -left-[31px] top-1 bg-background border-2 border-primary rounded-full size-4 flex items-center justify-center transition-transform group-hover:scale-125 duration-300">
-                    <span className="size-1.5 rounded-full bg-primary" />
+                  <span className="absolute left-[3px] top-1.5 bg-background border-2 border-primary rounded-full size-3.5 flex items-center justify-center transition-transform group-hover:scale-125 duration-300">
+                    <span className="size-1 rounded-full bg-primary" />
                   </span>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-2 rounded-lg bg-card border border-border/60 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground duration-300">
+                    <div className="p-2 rounded-lg bg-card border border-border/60 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground duration-300 shrink-0">
                       <Icon className="size-5" />
                     </div>
                     <div>
@@ -64,6 +68,7 @@ const About = () => {
               )
             })}
           </div>
+
         </div>
 
         {/* Right Column: Bio and Stats */}

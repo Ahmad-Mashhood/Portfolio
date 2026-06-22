@@ -28,8 +28,9 @@ const Stack = () => {
         <h4 className="font-outfit text-xs font-bold uppercase tracking-widest text-primary shrink-0">
           Core Tech Stack
         </h4>
-        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 w-full md:justify-end">
+        <div className="flex overflow-x-auto scrollbar-none flex-nowrap items-center gap-6 sm:gap-8 pb-2 pt-1 w-full md:justify-end md:flex-wrap md:overflow-visible md:pb-0 md:pt-0">
           {stack.map((item, index) => {
+
             const CustomIcon = item.icon
             return (
               <div 
