@@ -75,7 +75,7 @@ const Footer = () => {
 
           <div className="space-y-4 pt-4 text-sm font-light text-muted-foreground">
             <div className="flex items-center gap-3">
-              <span className="p-2 rounded-lg bg-card border border-border/60 text-primary">
+              <span className="p-2 rounded-lg bg-card border border-border dark:border-border/40 text-primary">
                 <Mail className="size-4" />
               </span>
               <a href="mailto:ahmadmashhood.am@gmail.com" className="hover:text-primary transition-colors hover:underline">
@@ -84,7 +84,7 @@ const Footer = () => {
             </div>
             
             <div className="flex items-center gap-3">
-              <span className="p-2 rounded-lg bg-card border border-border/60 text-primary">
+              <span className="p-2 rounded-lg bg-card border border-border dark:border-border/40 text-primary">
                 <MapPin className="size-4" />
               </span>
               <span>Multan, Pakistan</span>
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
 
         {/* Contact form column */}
-        <div className="lg:col-span-7 bg-card/45 backdrop-blur-sm border border-border/60 p-6 sm:p-8 rounded-2xl shadow-xl shadow-black/[0.02] dark:shadow-black/10">
+        <div className="lg:col-span-7 bg-card/85 dark:bg-card/45 backdrop-blur-sm border border-border dark:border-border/60 p-6 sm:p-8 rounded-2xl shadow-xl shadow-black/[0.02] dark:shadow-black/10">
           {isSubmitted ? (
             <div className="flex flex-col items-center justify-center py-8 text-center space-y-4">
               <div className="p-4 bg-emerald-500/10 text-emerald-500 rounded-full border border-emerald-500/20 animate-bounce">
@@ -121,7 +121,7 @@ const Footer = () => {
                     value={formState.name}
                     onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                     placeholder="Enter your name"
-                    className="w-full bg-transparent border-b border-border/60 focus:border-primary py-2.5 text-sm focus:outline-none transition-colors text-foreground font-light placeholder:text-muted-foreground/50"
+                    className="w-full bg-transparent border-b border-border dark:border-b-border/60 focus:border-primary py-2.5 text-sm focus:outline-none transition-colors text-foreground font-light placeholder:text-muted-foreground/50"
                   />
                 </div>
 
@@ -136,7 +136,7 @@ const Footer = () => {
                     value={formState.email}
                     onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                     placeholder="Enter your email"
-                    className="w-full bg-transparent border-b border-border/60 focus:border-primary py-2.5 text-sm focus:outline-none transition-colors text-foreground font-light placeholder:text-muted-foreground/50"
+                    className="w-full bg-transparent border-b border-border dark:border-b-border/60 focus:border-primary py-2.5 text-sm focus:outline-none transition-colors text-foreground font-light placeholder:text-muted-foreground/50"
                   />
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Footer = () => {
                   value={formState.message}
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                   placeholder="Tell me about your project..."
-                  className="w-full bg-transparent border-b border-border/60 focus:border-primary py-2.5 text-sm focus:outline-none transition-colors text-foreground font-light resize-none placeholder:text-muted-foreground/50"
+                  className="w-full bg-transparent border-b border-border dark:border-b-border/60 focus:border-primary py-2.5 text-sm focus:outline-none transition-colors text-foreground font-light resize-none placeholder:text-muted-foreground/50"
                 />
               </div>
 
@@ -179,7 +179,7 @@ const Footer = () => {
       </section>
 
       {/* Footer copyright block */}
-      <div className="border-t border-border/20 pt-8 pb-12 mt-16 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+      <div className="border-t border-border/50 dark:border-border/20 pt-8 pb-12 mt-16 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
         <div className="space-y-1.5">
           <div className="font-outfit font-bold text-foreground text-base tracking-tight">
             Ahmad Mashhood<span className="text-primary">.</span>
@@ -195,7 +195,7 @@ const Footer = () => {
               href="https://github.com/Ahmad-Mashhood" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="p-2 rounded-lg bg-card border border-border/60 hover:border-primary hover:text-primary transition-colors text-muted-foreground cursor-pointer"
+              className="p-2 rounded-lg bg-card border border-border dark:border-border/40 hover:border-primary hover:text-primary transition-colors text-muted-foreground cursor-pointer"
               aria-label="GitHub"
             >
               <Github className="size-4" />
@@ -204,7 +204,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/ahmadmashhood-web" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="p-2 rounded-lg bg-card border border-border/60 hover:border-primary hover:text-primary transition-colors text-muted-foreground cursor-pointer"
+              className="p-2 rounded-lg bg-card border border-border dark:border-border/40 hover:border-primary hover:text-primary transition-colors text-muted-foreground cursor-pointer"
               aria-label="LinkedIn"
             >
               <Linkedin className="size-4" />
@@ -213,7 +213,7 @@ const Footer = () => {
               href="https://instagram.com/talk_to_ahmad" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="p-2 rounded-lg bg-card border border-border/60 hover:border-primary hover:text-primary transition-colors text-muted-foreground cursor-pointer"
+              className="p-2 rounded-lg bg-card border border-border dark:border-border/40 hover:border-primary hover:text-primary transition-colors text-muted-foreground cursor-pointer"
               aria-label="Instagram"
             >
               <Instagram className="size-4" />

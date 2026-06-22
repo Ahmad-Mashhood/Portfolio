@@ -19,7 +19,7 @@ const Profile = () => {
         </div>
 
         <h1 className="font-outfit text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground leading-[1.1] pb-1">
-          Software <br className="hidden sm:inline" />
+          Full Stack <br className="hidden sm:inline" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-500 dark:to-orange-400">
             Developer
           </span>
@@ -51,25 +51,25 @@ const Profile = () => {
 
         <div className="relative flex items-center justify-center size-64 sm:size-80 lg:size-96">
           {/* Concentric Circles Grid Lines */}
-          <div className="absolute inset-0 rounded-full border border-border/10 animate-[spin_120s_linear_infinite]" />
-          <div className="absolute inset-8 sm:inset-10 rounded-full border border-dashed border-primary/10 animate-[spin_80s_linear_infinite]" />
-          <div className="absolute inset-16 sm:inset-20 rounded-full border border-border/20" />
+          <div className="absolute inset-0 rounded-full border border-border/35 dark:border-border/10 animate-[spin_120s_linear_infinite]" />
+          <div className="absolute inset-8 sm:inset-10 rounded-full border border-dashed border-primary/20 dark:border-primary/10 animate-[spin_80s_linear_infinite]" />
+          <div className="absolute inset-16 sm:inset-20 rounded-full border border-border/35 dark:border-border/20" />
           
           {/* Glow Behind */}
           <div className="absolute inset-24 rounded-full bg-primary/5 dark:bg-primary/10 blur-3xl" />
 
           {/* Floating Left Bracket */}
-          <div className="absolute left-0 sm:left-4 top-1/2 -translate-y-1/2 bg-card/90 backdrop-blur-md border border-border/60 dark:border-border/30 text-primary text-xl font-mono size-10 sm:size-12 rounded-xl flex items-center justify-center shadow-lg shadow-black/5 dark:shadow-black/20 animate-float-left select-none">
+          <div className="absolute left-0 sm:left-4 top-1/2 -translate-y-1/2 bg-card/90 backdrop-blur-md border border-border dark:border-border/30 text-primary text-xl font-mono size-10 sm:size-12 rounded-xl flex items-center justify-center shadow-lg shadow-black/5 dark:shadow-black/20 animate-float-left select-none">
             &lt;
           </div>
           
           {/* Floating Right Bracket */}
-          <div className="absolute right-0 sm:right-4 top-1/2 -translate-y-1/2 bg-card/90 backdrop-blur-md border border-border/60 dark:border-border/30 text-primary text-xl font-mono size-10 sm:size-12 rounded-xl flex items-center justify-center shadow-lg shadow-black/5 dark:shadow-black/20 animate-float-right select-none">
+          <div className="absolute right-0 sm:right-4 top-1/2 -translate-y-1/2 bg-card/90 backdrop-blur-md border border-border dark:border-border/30 text-primary text-xl font-mono size-10 sm:size-12 rounded-xl flex items-center justify-center shadow-lg shadow-black/5 dark:shadow-black/20 animate-float-right select-none">
             &gt;
           </div>
 
           {/* Avatar frame */}
-          <div className="relative size-44 sm:size-56 lg:size-64 rounded-full overflow-hidden border-2 border-primary/60 dark:border-primary/40 p-2 bg-background shadow-2xl">
+          <div className="relative size-44 sm:size-56 lg:size-64 rounded-full overflow-hidden border-2 border-primary/80 dark:border-primary/40 p-2 bg-background shadow-2xl">
             <div className="size-full rounded-full overflow-hidden bg-muted">
               <img 
                 src="/profile.png" 

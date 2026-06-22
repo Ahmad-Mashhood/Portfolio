@@ -165,7 +165,7 @@ const Projects = () => {
     <section id="projects" className="space-y-12 py-8 scroll-mt-20">
       <div className="flex items-center gap-3">
         <h2 className="font-outfit text-3xl font-bold tracking-tight text-foreground">Projects</h2>
-        <span className="h-0.5 flex-1 bg-border/20" />
+        <span className="h-0.5 flex-1 bg-border/60 dark:bg-border/20" />
       </div>
 
       <div className="space-y-16 lg:space-y-24">
@@ -176,7 +176,7 @@ const Projects = () => {
           >
             {/* Project Mockup Column */}
             <div className={`lg:col-span-5 ${index % 2 !== 0 ? 'lg:order-2' : 'lg:order-1'} group`}>
-              <div className="relative rounded-2xl overflow-hidden shadow-xl shadow-black/5 dark:shadow-black/30 transition-transform duration-500 hover:-translate-y-1 bg-slate-950 p-2 border border-border/60 dark:border-border/10">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl shadow-black/5 dark:shadow-black/30 transition-transform duration-500 hover:-translate-y-1 bg-slate-950 p-2 border border-border dark:border-border/15">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 {renderMockup(item.mockupType)}
               </div>
@@ -202,7 +202,7 @@ const Projects = () => {
                   <Badge 
                     key={tagId}
                     variant="secondary"
-                    className="text-[10px] font-semibold tracking-wide uppercase px-2 py-0.5 border border-border bg-card/60"
+                    className="text-[10px] font-semibold tracking-wide uppercase px-2 py-0.5 border border-border bg-card dark:bg-card/60"
                   >
                     {tag}
                   </Badge>

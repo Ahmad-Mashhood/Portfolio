@@ -7,7 +7,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/20 bg-background/80 backdrop-blur-md transition-colors duration-300">
+    <header className="sticky top-0 z-40 w-full border-b border-border/40 dark:border-border/10 bg-background/80 backdrop-blur-md transition-colors duration-300">
       <div className="flex h-16 items-center justify-between py-4">
         {/* Logo / Name */}
         <div className="flex items-center gap-3">
@@ -26,7 +26,7 @@ const Navbar = () => {
           <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">About</a>
           <a href="#projects" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Projects</a>
           <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Contact</a>
-          <span className="h-4 w-px bg-border/40" />
+          <span className="h-4 w-px bg-border/70 dark:bg-border/30" />
           <a href="https://github.com/Ahmad-Mashhood" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
             <Github className="size-5" />
           </a>
@@ -48,7 +48,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border/20 bg-background/95 backdrop-blur-md px-2 py-4 space-y-3 absolute top-16 left-0 right-0 shadow-lg border-b border-border/10 transition-all duration-300">
+        <div className="md:hidden border-t border-border/40 dark:border-border/20 bg-background/95 backdrop-blur-md px-2 py-4 space-y-3 absolute top-16 left-0 right-0 shadow-lg border-b border-border/20 dark:border-border/10 transition-all duration-300">
           <a
             href="#home"
             onClick={() => setMobileMenuOpen(false)}
@@ -77,7 +77,7 @@ const Navbar = () => {
           >
             Contact
           </a>
-          <div className="border-t border-border/20 pt-2 flex items-center justify-between px-3">
+          <div className="border-t border-border/40 dark:border-border/20 pt-2 flex items-center justify-between px-3">
             <span className="text-xs text-muted-foreground">Find me on GitHub</span>
             <a href="https://github.com/Ahmad-Mashhood" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
               <Github className="size-5" />

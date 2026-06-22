@@ -23,7 +23,7 @@ const Stack = () => {
   const { resolvedTheme } = useTheme()
   
   return (
-    <section className="py-5 border-y border-border/20 bg-card/30 backdrop-blur-sm relative overflow-hidden rounded-xl">
+    <section className="py-5 border-y border-border/50 dark:border-border/20 bg-card/60 dark:bg-card/30 backdrop-blur-sm relative overflow-hidden rounded-xl">
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 px-6">
         <h4 className="font-outfit text-xs font-bold uppercase tracking-widest text-primary shrink-0">
           Core Tech Stack

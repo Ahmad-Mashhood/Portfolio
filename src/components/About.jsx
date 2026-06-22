@@ -29,7 +29,7 @@ const About = () => {
     <section id="about" className="space-y-10 py-8 scroll-mt-20">
       <div className="flex items-center gap-3">
         <h2 className="font-outfit text-3xl font-bold tracking-tight text-foreground">About me</h2>
-        <span className="h-0.5 flex-1 bg-border/20" />
+        <span className="h-0.5 flex-1 bg-border/60 dark:bg-border/20" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -44,7 +44,7 @@ const About = () => {
                 <div key={index} className="relative pl-8 pb-8 last:pb-0 group">
                   {/* Vertical line segment */}
                   {index !== services.length - 1 && (
-                    <span className="absolute left-[9px] top-4 bottom-0 w-0.5 bg-primary/20" />
+                    <span className="absolute left-[9px] top-4 bottom-0 w-0.5 bg-primary/35 dark:bg-primary/20" />
                   )}
                   {/* Timeline Dot */}
                   <span className="absolute left-[3px] top-1.5 bg-background border-2 border-primary rounded-full size-3.5 flex items-center justify-center transition-transform group-hover:scale-125 duration-300">
@@ -52,7 +52,7 @@ const About = () => {
                   </span>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-2 rounded-lg bg-card border border-border/60 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground duration-300 shrink-0">
+                    <div className="p-2 rounded-lg bg-card border border-border dark:border-border/40 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground duration-300 shrink-0">
                       <Icon className="size-5" />
                     </div>
                     <div>
@@ -86,7 +86,7 @@ const About = () => {
           </div>
 
           {/* Stats Blocks Grid */}
-          <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border/20">
+          <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border/50 dark:border-border/20">
             <div className="space-y-1">
               <h4 className="font-outfit text-3xl font-extrabold text-primary">3+</h4>
               <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
